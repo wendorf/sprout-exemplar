@@ -1,6 +1,6 @@
 language: objective-c
 install:
-  - rvm implode --force
+  - echo yes | rvm implode
   - sudo gem install bundler --no-ri --no-rdoc
   - sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future bundle install
 script:
